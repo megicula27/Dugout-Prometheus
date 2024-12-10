@@ -7,14 +7,15 @@ scrape_configs:
       - targets: ["dugout-sandy.vercel.app"]
     metrics_path: "/api/metrics" # Important: point to your metrics endpoint
 
-  - job_name: "socket"
-    static_configs:
-      - targets: ["dugout-socket-server.onrender.com"]
+
+  # - job_name: "socket"
+  #   static_configs:
+  #     - targets: ["dugout-socket-server.onrender.com"]
 
   # - job_name: "mongo"
   #   static_configs:
   #     - targets: ["mongo:27017"]
 
-  - job_name: "redis"
-    static_configs:
-      - targets: ["redis-13217.c301.ap-south-1-1.ec2.redns.redis-cloud.com"]
+  # - job_name: "redis"
+  #   static_configs:
+  #     - targets: ["redis-13217.c301.ap-south-1-1.ec2.redns.redis-cloud.com"]
